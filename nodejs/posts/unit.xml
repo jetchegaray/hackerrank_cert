@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.1860" tests="13" failures="4">
+  <testsuite name="Root Suite" timestamp="2023-06-07T10:37:55" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="blog_posts_api_medium" timestamp="2023-06-07T10:37:55" tests="13" file="/home/javimetal/workspace/hackerranks_cert/nodejs/posts/test/index.spec.js" time="0.1860" failures="4">
+    <testcase name="blog_posts_api_medium should create a published post" time="0.0260" classname="should create a published post">
+    </testcase>
+    <testcase name="blog_posts_api_medium should create an unpublished post" time="0.0060" classname="should create an unpublished post">
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch all the posts" time="0.0290" classname="should fetch all the posts">
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch all the posts if the isPublished filter value does not exist" time="0.0220" classname="should fetch all the posts if the isPublished filter value does not exist">
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch all posts for an author" time="0.0190" classname="should fetch all posts for an author">
+      <failure message="WHERE parameter &quot;isPublished&quot; has invalid &quot;undefined&quot; value" type="Error"><![CDATA[Error: WHERE parameter "isPublished" has invalid "undefined" value
+    at getAll (controllers/posts.js:64:13)]]></failure>
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch no posts if author filter value does not exist" time="0.0170" classname="should fetch no posts if author filter value does not exist">
+      <failure message="WHERE parameter &quot;isPublished&quot; has invalid &quot;undefined&quot; value" type="Error"><![CDATA[Error: WHERE parameter "isPublished" has invalid "undefined" value
+    at getAll (controllers/posts.js:64:13)]]></failure>
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch all published posts for an author" time="0.0200" classname="should fetch all published posts for an author">
+      <failure message="expected [] to deeply equal [ Array(1) ]" type="AssertionError"><![CDATA[AssertionError: expected [] to deeply equal [ Array(1) ]
+    at Context.<anonymous> (test/index.spec.js:125:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch all unpublished posts for an author" time="0.0170" classname="should fetch all unpublished posts for an author">
+      <failure message="expected [] to deeply equal [ Array(1) ]" type="AssertionError"><![CDATA[AssertionError: expected [] to deeply equal [ Array(1) ]
+    at Context.<anonymous> (test/index.spec.js:132:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch a single post" time="0.0090" classname="should fetch a single post">
+    </testcase>
+    <testcase name="blog_posts_api_medium should get 404 if the post ID does not exist" time="0.0030" classname="should get 404 if the post ID does not exist">
+    </testcase>
+    <testcase name="blog_posts_api_medium should get 405 for a put request to /posts/:id" time="0.0060" classname="should get 405 for a put request to /posts/:id">
+    </testcase>
+    <testcase name="blog_posts_api_medium should get 405 for a patch request to /posts/:id" time="0.0060" classname="should get 405 for a patch request to /posts/:id">
+    </testcase>
+    <testcase name="blog_posts_api_medium should get 405 for a delete request to /posts/:id" time="0.0060" classname="should get 405 for a delete request to /posts/:id">
+    </testcase>
+  </testsuite>
+</testsuites>

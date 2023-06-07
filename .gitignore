@@ -1,0 +1,6 @@
+**/node_modules
+
+**/pakage-lock.json
+**/dist
+
+**/yarn-error.log
